@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.top {
+    background: linear-gradient(to bottom, #012 0%, #046 25%);
+    position: relative;
+    z-index: 2;
+}
+
+.bottom {
+    background: #024;
+    color: #fff;
+    height: 75vh;
+    position: relative;
+    z-index: 1;
+}
+
+.separator {
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+header {
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    z-index: 4;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.twoITB {
+    font-size: 3em;
+    position: relative;
+    z-index: 1;
+}
+
+.class {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    font-size: 0.75em;
+    z-index: 1;
+}
+
+.infinity-icon {
+    position: absolute;
+    top: 30%;
+    right: 20px;
+    font-size: 2em;
+    z-index: 1;
+}
+
+.custom-icon {
+    position: absolute;
+    top: 0; /* Změna na 0 */
+    right: 100px;
+    width: 90px;
+    height: auto;
+    transform: translateY(-10px); /* Přidáno pro dodatečný posun o 10px nahoru */
+    z-index: 1;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    z-index: 6;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background: #000;
+    position: relative;
+    z-index: 1;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    top: calc(50% - 10px);
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.square.left {
+    left: calc(50% - 10px);
+}
+
+.square.right {
+    right: calc(50% - 10px);
+}
+
+/* Tvé ostatní styly zůstávají stejné */
+.main-info {
+    font-size: 3em;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.bottom {
+    background: #024; /* Nastavuje původní barvu pozadí */
+    color: #fff;
+    min-height: calc(100vh - 100px); /* Přizpůsobí výšku obsahu v dolní části stránky */
+    padding-top: 20px; /* Přidá odsazení od horního okraje */
+}
